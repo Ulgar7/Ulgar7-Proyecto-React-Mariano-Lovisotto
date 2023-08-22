@@ -1,14 +1,14 @@
 
-import './App.css'
+// import './App.css'
 
-function App() {
+import ComponenteA from "./components/componenteA"
 
-  const nombre = 'Mariano'
- 
-
+let  App = () => {
   return (
     <>
-      
+    <div>App</div>
+    <ComponenteA/>
+    
     </>
   )
 }
