@@ -6,18 +6,8 @@
 ---
 ---
 
-**Negrita**
+**Mi proyecto de react será una e-commerce dedicado a articulos de la NBA**
 
-_Italica_
-
-```javascript
-function sumar (a,b){
-return a + b}
-```
-
-1. Primero
-1. Segundo
-1. Tercero
 
 
 [LinkedIn] (https://www.instagram.com/marianolovisotto/)
