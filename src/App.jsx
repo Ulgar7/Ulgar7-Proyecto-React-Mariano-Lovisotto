@@ -1,13 +1,15 @@
+// import ComponenteA from "./components/componenteA"
 
-// import './App.css'
-
-import ComponenteA from "./components/componenteA"
+import ItemListContainer from "./components/ItemListContainer"
+import NavBar from "./components/NavBar"
 
 let  App = () => {
+
+  
   return (
     <>
-    <div>App</div>
-    <ComponenteA/>
+    <NavBar/>
+    <ItemListContainer greeting={'Bienvenido a tu centro de compras de articulos de NBA'}/>
     
     </>
   )
