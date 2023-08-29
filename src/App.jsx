@@ -1,17 +1,17 @@
-// import ComponenteA from "./components/componenteA"
-
 import ItemListContainer from "./components/ItemListContainer"
 import NavBar from "./components/NavBar"
+import { useState, useEffect } from "react"
 
-let  App = () => {
+const  App = () => {
 
-  
-  return (
-    <>
-    <NavBar/>
-    <ItemListContainer greeting={'Bienvenido a tu centro de compras de articulos de NBA'}/>
+    return (
+        <> 
+          
+          <NavBar/>
+           <ItemListContainer greeting={'Bienvenido a tu centro de compras de articulos de NBA'}/>
     
-    </>
+    
+        </>
   )
 }
 
