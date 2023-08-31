@@ -25,6 +25,18 @@ const ItemCount = () => {
     const onAdd = () => {
         alert(contador)
     }
+
+    const sumar = () => { if(contador < 10){
+      
+      setContador(contador + 1);
+    }
+      
+    }
+    const restar = () => { if(contador > 0){
+
+      setContador(contador - 1)
+    }
+    }
   return (
     <>
     <div>
@@ -36,11 +48,11 @@ const ItemCount = () => {
             <p align="center" justify="center">{contador}</p>
             <Flex justify='center'>
                  <ButtonGroup gap='4'>
-                     <Button  width='33300' colorScheme='blue' onClick={() => setContador(contador + 1)}>    +     </Button>
+                     <Button  width='33300' colorScheme='blue' onClick={sumar}>+</Button>
                       {/* <Spacer></Spacer> */}
                      <Button colorScheme='green' onClick={onAdd}>Buy</Button>
                      {/* <Spacer></Spacer> */}
-                     <Button  colorScheme='red' onClick={() => setContador(contador - 1)}>    -     </Button>
+                     <Button  colorScheme='red' onClick={restar}>-</Button>
 
                 </ButtonGroup>
 
