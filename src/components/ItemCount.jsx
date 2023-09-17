@@ -20,37 +20,36 @@ import {
 
 const ItemCount = () => {
 
-    const [contador, setContador] = useState(0)
+    const [contador, setContador] = useState(1)
         
     const onAdd = () => {
         alert(contador)
     }
 
     const sumar = () => { if(contador < 10){
-      
-      setContador(contador + 1);
+      setContador(contador +1)
     }
-      
-    }
-    const restar = () => { if(contador > 0){
-
+  }
+    const restar = () => { if(contador > 1){
       setContador(contador - 1)
     }
     }
+
+
   return (
     <>
     <div>
-    <Flex justify='center'> 
+    <Flex justify=''> 
     
-        <Card mt='10' maxW='md'>
+        <Card mt='' maxW='md'>
             <CardBody >
     
-            <p align="center" justify="center">{contador}</p>
-            <Flex justify='center'>
+            <p align="center" justify="">{contador}</p>
+            <Flex justify=''>
                  <ButtonGroup gap='4'>
                      <Button  width='33300' colorScheme='blue' onClick={sumar}>+</Button>
                       {/* <Spacer></Spacer> */}
-                     <Button colorScheme='green' onClick={onAdd}>Buy</Button>
+                     <Button colorScheme='green' onClick={onAdd}>Añadir al carrito</Button>
                      {/* <Spacer></Spacer> */}
                      <Button  colorScheme='red' onClick={restar}>-</Button>
 

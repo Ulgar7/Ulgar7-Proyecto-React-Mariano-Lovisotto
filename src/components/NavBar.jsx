@@ -1,31 +1,29 @@
 import React from 'react'
 import CartWidget from './CartWidget'
-import {
-    Menu,
-    MenuButton,
-    MenuList,
-    MenuItem,
-    Flex,Box, Spacer,
-    MenuItemOption,
-    MenuGroup,
-    MenuOptionGroup,
-    MenuDivider,
-  } from '@chakra-ui/react'
+import {  Menu,Button,MenuButton,MenuList,MenuItem,Flex,Box, Spacer,MenuItemOption,MenuGroup,MenuOptionGroup,MenuDivider,} from '@chakra-ui/react'
+import { Link } from 'react-router-dom'
 
 const NavBar = () => {
+  
   return (
     <div>
 
-        <Flex  backgroundColor='black'> 
+        <Flex  backgroundColor='darkblue'> 
             <Box p='4'  color='white' >
-                <Menu>
-                    <MenuButton >
-                        Categories
+                <Menu  >
+                    <MenuButton   >
+                        Categorias
                     </MenuButton>
-                    <MenuList color='black'>
-                        <MenuItem>Category A</MenuItem>
-                        <MenuItem>Category B</MenuItem>
-                        <MenuItem>Category C</MenuItem>
+                    <MenuList background='darkred'  color='white'>
+                        <Link to={`/categoria/A`}>
+                        <MenuItem background='darkred'>Categoria A</MenuItem>
+                        </Link>
+                        <Link to={`/categoria/B`}>
+                        <MenuItem background='darkred'>Categoria B</MenuItem>
+                        </Link>
+                        <Link to={`/categoria/C`}>
+                        <MenuItem background='darkred'>Categoria C</MenuItem>
+                        </Link>
       
                      </MenuList>
                  </Menu>
@@ -33,13 +31,17 @@ const NavBar = () => {
             </Box>
             <Spacer />
             <Box p='4' color='white' fontSize={24}>
-                
+            <Link to={'/'}>
             <h3>NBA-Store</h3>
+            </Link>
+            
                  
             </Box>
             <Spacer />
             <Box p='4' color='white'>
-            <CartWidget/>
+              <Link to={'/cart'}>
+                <CartWidget/>
+              </Link>
 
             </Box>
         </Flex>
